@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styling/tarieven.css" rel="stylesheet">
+    <link rel="icon" href="images/titleLogo.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <meta name="format-detection" content="telephone=no">
+    <title>Rijschool Paraat | Tarieven</title>
+</head>
+
+<body>
+    <div class="mobile Nav">
+        <a href="index.html" class="opennavLogo"><img src="images\logo.jpg" alt="Rijschool Paraat"></a>
+        <div class="hamburger" onclick="openMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="hamburgerMenu">
+            <button class="close-btn" onclick="closeMenu()">✖</button>
+            <a href="index.html" class="navLogo"><img src="images\logo.jpg" alt="Rijschool Paraat"></a>
+            <ul class="mobileNavLinks">
+                <li class="mobileNavItem" onclick="window.location.href='index.html'">Home</li>
+                <li class="mobileNavItem" onclick="window.location.href='overons.html'">Over Ons</li>
+                <li class="mobileNavItem" onclick="window.location.href='tarieven.html'">Tarieven</li>
+                <li class="mobileNavItem" onclick="window.location.href='inschrijven.html'">Inschrijven</li>
+                <li class="mobileNavItem" onclick="window.location.href='contact.html'">Contact</li>
+                <div>
+                    <button class="linkedinBtn" onclick="location.href='https://www.instagram.com/rijschoolparaat.nl/'">
+                        <svg class="NavlinkedinSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path class="linkedinPath" d="M256.1,124.7c-72.6,0-131.2,58.6-131.2,131.2s58.6,131.2,131.2,131.2s131.2-58.6,131.2-131.2S328.7,124.7,256.1,124.7z
+                        M256.1,341.2c-46.9,0-85.3-38.3-85.3-85.3s38.3-85.3,85.3-85.3s85.3,38.3,85.3,85.3S303,341.2,256.1,341.2L256.1,341.2z
+                        M423.3,119.3c0,17-13.7,30.6-30.6,30.6c-17,0-30.6-13.7-30.6-30.6s13.7-30.6,30.6-30.6S423.3,102.4,423.3,119.3z M510.2,150.4
+                       c-1.9-41-11.3-77.3-41.3-107.3C438.9,13.2,402.6,3.8,361.6,1.8c-42.3-2.4-168.9-2.4-211.2,0C109.5,3.7,73.2,13.1,43.1,43
+                       S3.9,109.2,1.8,150.2c-2.4,42.3-2.4,168.9,0,211.2c1.9,41,11.3,77.3,41.3,107.3c30,29.9,66.2,39.3,107.3,41.3
+                       c42.3,2.4,168.9,2.4,211.2,0c41-1.9,77.3-11.3,107.3-41.3c29.9-29.9,39.3-66.2,41.3-107.3C512.6,319.2,512.6,192.6,510.2,150.4
+                       L510.2,150.4z M455.6,406.8c-8.9,22.4-26.2,39.6-48.7,48.7c-33.7,13.4-113.7,10.3-150.9,10.3s-117.3,3-150.9-10.3
+                       c-22.4-8.9-39.6-26.2-48.7-48.7c-13.4-33.7-10.3-113.7-10.3-150.9s-3-117.3,10.3-150.9c8.9-22.4,26.2-39.6,48.7-48.7
+                       C138.9,43,218.8,46.1,256.1,46.1s117.3-3,150.9,10.3c22.4,8.9,39.6,26.2,48.7,48.7c13.4,33.7,10.3,113.7,10.3,150.9
+                       S469,373.2,455.6,406.8z">
+                            </path>
+                        </svg>
+                    </button>
+                    <button class="linkedinBtn" onclick="location.href='https://www.tiktok.com/@rijschoolparaat.nl'">
+                        <svg class="NavlinkedinSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 
+                            122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z" />
+                        </svg>
+                    </button>
+                    <button class="linkedinBtn" onclick="location.href='https://wa.me/+31642672412 '">
+                        <svg class="NavlinkedinSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path
+                                d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="cta-button"><a href="inschrijven.html">Plan vandaag nog je proefles in!</a></div>
+            </ul>
+        </div>
+    </div>
+    <nav>
+        <a href="index.html" class="deskNavLogo">
+            <img src="images\logo.jpg" alt="Rijschool Paraat">
+        </a>
+        <ul class="navLinks">
+            <li class="navItem"><a href="index.html">Home</a></li>
+            <li class="navItem"><a href="overons.html">Over ons</a></li>
+            <li class="navItem"><a href="tarieven.html" class="active">Tarieven</a></li>
+            <li class="navItem"><a href="inschrijven.html">Inschrijven</a></li>
+            <li class="navItem"><a href="contact.html">Contact</a></li>
+            <div>
+                <button class="linkedinBtn" onclick="location.href='https://www.instagram.com/rijschoolparaat.nl/'">
+                    <svg class="NavlinkedinSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path class="linkedinPath" d="M256.1,124.7c-72.6,0-131.2,58.6-131.2,131.2s58.6,131.2,131.2,131.2s131.2-58.6,131.2-131.2S328.7,124.7,256.1,124.7z
+                    M256.1,341.2c-46.9,0-85.3-38.3-85.3-85.3s38.3-85.3,85.3-85.3s85.3,38.3,85.3,85.3S303,341.2,256.1,341.2L256.1,341.2z
+                    M423.3,119.3c0,17-13.7,30.6-30.6,30.6c-17,0-30.6-13.7-30.6-30.6s13.7-30.6,30.6-30.6S423.3,102.4,423.3,119.3z M510.2,150.4
+                   c-1.9-41-11.3-77.3-41.3-107.3C438.9,13.2,402.6,3.8,361.6,1.8c-42.3-2.4-168.9-2.4-211.2,0C109.5,3.7,73.2,13.1,43.1,43
+                   S3.9,109.2,1.8,150.2c-2.4,42.3-2.4,168.9,0,211.2c1.9,41,11.3,77.3,41.3,107.3c30,29.9,66.2,39.3,107.3,41.3
+                   c42.3,2.4,168.9,2.4,211.2,0c41-1.9,77.3-11.3,107.3-41.3c29.9-29.9,39.3-66.2,41.3-107.3C512.6,319.2,512.6,192.6,510.2,150.4
+                   L510.2,150.4z M455.6,406.8c-8.9,22.4-26.2,39.6-48.7,48.7c-33.7,13.4-113.7,10.3-150.9,10.3s-117.3,3-150.9-10.3
+                   c-22.4-8.9-39.6-26.2-48.7-48.7c-13.4-33.7-10.3-113.7-10.3-150.9s-3-117.3,10.3-150.9c8.9-22.4,26.2-39.6,48.7-48.7
+                   C138.9,43,218.8,46.1,256.1,46.1s117.3-3,150.9,10.3c22.4,8.9,39.6,26.2,48.7,48.7c13.4,33.7,10.3,113.7,10.3,150.9
+                   S469,373.2,455.6,406.8z">
+                        </path>
+                    </svg>
+                </button>
+                <button class="linkedinBtn" onclick="location.href='https://www.tiktok.com/@rijschoolparaat.nl'">
+                    <svg class="NavlinkedinSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 
+                        122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z" />
+                    </svg>
+                </button>
+                <button class="linkedinBtn" onclick="location.href='https://wa.me/+31642672412 '">
+                    <svg class="NavlinkedinSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path
+                            d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+                    </svg>
+                </button>
+            </div>
+        </ul>
+    </nav>
+    <main>
+        <div class="tarievenContent">
+            <div class="tarievenInleiding">
+                <h2>Onze Lespakketten en Diensten</h2>
+                <div class="tarievenGrid">
+                    <div class="tarievenTekst">
+                        <p>
+                            Rijschool Paraat is dé rijschool in de regio Utrecht met jarenlange ervaring in het
+                            opleiden
+                            van
+                            bestuurders. Wij hebben al veel leerlingen geholpen met hun rijbewijs.
+                        </p>
+                        <p>
+                            We bieden verschillende lespakketten en losse rijlessen aan die passen bij jouw wensen.
+                        </p>
+                        <p>
+                            Heb je vragen of specifieke behoeften of wil je meer weten over onze pakketten of een
+                            gratis
+                            proefles aanvragen? Neem gerust contact met ons op!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="paketten">
+            <div class="pakketCard">
+                <div class="pakketCardText">
+                    <div>Paraat Groeipakket</div>
+                </div>
+                <div class="pakketCardPrijs">
+                    <div>€ 1150</div>
+                </div>
+                <ul>
+                    <li>20 rijlessen (60 minuten)</li>
+                    <li>Praktijkexamen</li>
+                    <li>Vaste instructeur</li>
+                    <li>Persoonlijke aandacht</li>
+                    <li>Betalen in termijnen</li>
+                </ul>
+                <a href="inschrijven.html?pakket=Groeipakket" class="inschrijfPakketButton button">Inschrijven voor
+                    Groeipakket</a>
+            </div>
+            <div class="pakketCard">
+                <div class="pakketCardText">
+                    <div>Paraat Premiumpakket</div>
+                </div>
+                <div class="pakketCardPrijs">
+                    <div>€ 1800</div>
+                </div>
+                <ul>
+                    <li>30 rijlessen (60 minuten)</li>
+                    <li>Inclusief praktijkexamen</li>
+                    <li>Inclusief Tussentijdse toets</li>
+                    <li>Vaste instructeur</li>
+                    <li>Persoonlijke aandacht</li>
+                    <li>Betalen in termijnen</li>
+                </ul>
+                <a href="inschrijven.html?pakket=Premiumpakket" class="inschrijfPakketButton">Inschrijven voor
+                    Premiumpakket</a>
+            </div>
+            <div class="pakketCard">
+                <div class="ribbon right">Meest Gekozen</div>
+                <div class="pakketCardText">
+                    <div>Paraat all-in pakket</div>
+                </div>
+                <div class="pakketCardPrijs">
+                    <div>€ 2250</div>
+                </div>
+                <ul>
+                    <li>40 rijlessen</li>
+                    <li>Inclusief praktijkexamen</li>
+                    <li>Inclusief Tussentijdse toets</li>
+                    <li>Vaste instructeur</li>
+                    <li>Persoonlijke aandacht</li>
+                    <li>Betalen in termijnen</li>
+                </ul>
+                <a href="inschrijven.html?pakket=AllinPakket" class="inschrijfPakketButton">Inschrijven voor All-in
+                    pakket</a>
+            </div>
+            <div class="pakketCard">
+                <div class="pakketCardText">
+                    <div>Overige diensten</div>
+                </div>
+                <ul>
+                    <li>Losse les € 50</li>
+                    <li>Praktijkexamen € 250
+                        <span id="gratis" style="display: block; font-size: 70%; color: rgb(105, 105, 105);">Bij het
+                            afnemen van een lespakket is het praktijkexamen gratis.</span>
+                    </li>
+                    <li>Tussentijdse toets € 200</li>
+                    <li>Proefles Gratis
+                        <span id="gratis" style="display: block; font-size: 70%; color: rgb(105, 105, 105);">Proefles
+                            is
+                            gratis bij het afnemen van lessen.</span>
+                    </li>
+                </ul>
+                <a href="inschrijven.html?pakket=Proefles" class="inschrijfPakketButton">Inschrijven voor gratis
+                    proefles</a>
+            </div>
+        </div>
+        <div class="cta-sectie">
+            <h3>Klaar om te beginnen?</h3>
+            <p>Schrijf je nu in voor je eerste rijles en start je reis naar vrijheid op de weg!</p>
+            <a href="inschrijven.html" class="tariefcta-button">Schrijf je nu in</a>
+        </div>
+    </main>
+    <footer>
+        <div class="footerMiddle">
+            <ul>
+                <li>Sitemap</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="overons.html">Over Ons</a></li>
+                <li><a href="tarieven.html">Tarieven</a></li>
+                <li><a href="inschrijven.html">Inschrijven</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul>
+                <li>Contact</li>
+                <li>info@rijschoolparaat.nl</li>
+                <li>+31642672412</li>
+                <li>Utrecht, Nederland</li>
+            </ul>
+            <ul class="socials">
+                <li>Social media</li>
+                <button class="linkedinBtn" onclick="location.href='https://www.instagram.com/rijschoolparaat.nl/'">
+                    <svg class="linkedinSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path class="linkedinPath" d="M256.1,124.7c-72.6,0-131.2,58.6-131.2,131.2s58.6,131.2,131.2,131.2s131.2-58.6,131.2-131.2S328.7,124.7,256.1,124.7z
+                        M256.1,341.2c-46.9,0-85.3-38.3-85.3-85.3s38.3-85.3,85.3-85.3s85.3,38.3,85.3,85.3S303,341.2,256.1,341.2L256.1,341.2z
+                        M423.3,119.3c0,17-13.7,30.6-30.6,30.6c-17,0-30.6-13.7-30.6-30.6s13.7-30.6,30.6-30.6S423.3,102.4,423.3,119.3z M510.2,150.4
+                       c-1.9-41-11.3-77.3-41.3-107.3C438.9,13.2,402.6,3.8,361.6,1.8c-42.3-2.4-168.9-2.4-211.2,0C109.5,3.7,73.2,13.1,43.1,43
+                       S3.9,109.2,1.8,150.2c-2.4,42.3-2.4,168.9,0,211.2c1.9,41,11.3,77.3,41.3,107.3c30,29.9,66.2,39.3,107.3,41.3
+                       c42.3,2.4,168.9,2.4,211.2,0c41-1.9,77.3-11.3,107.3-41.3c29.9-29.9,39.3-66.2,41.3-107.3C512.6,319.2,512.6,192.6,510.2,150.4
+                       L510.2,150.4z M455.6,406.8c-8.9,22.4-26.2,39.6-48.7,48.7c-33.7,13.4-113.7,10.3-150.9,10.3s-117.3,3-150.9-10.3
+                       c-22.4-8.9-39.6-26.2-48.7-48.7c-13.4-33.7-10.3-113.7-10.3-150.9s-3-117.3,10.3-150.9c8.9-22.4,26.2-39.6,48.7-48.7
+                       C138.9,43,218.8,46.1,256.1,46.1s117.3-3,150.9,10.3c22.4,8.9,39.6,26.2,48.7,48.7c13.4,33.7,10.3,113.7,10.3,150.9
+                       S469,373.2,455.6,406.8z">
+                        </path>
+                    </svg>
+                </button>
+                <button class="linkedinBtn" onclick="location.href='https://www.tiktok.com/@rijschoolparaat.nl'">
+                    <svg class="linkedinSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 
+                            122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z" />
+                    </svg>
+                </button>
+                <button class="linkedinBtn" onclick="location.href='https://wa.me/+31642672412 '">
+                    <svg class="linkedinSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path
+                            d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+                    </svg>
+                </button>
+            </ul>
+        </div>
+        <div class="footerBottom">
+            <span id="copyright" style="color: rgb(236, 236, 236);">© 2024 Rijschool Paraat</span>
+            <span class="policyLinksDot">&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+            <div style="white-space: nowrap;" class="footerBottomRight"></div>
+            <a href="legal\privacy_policy.html" class="policyLinks">Privacy Policy</a>
+            <span class="policyLinksDot">&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+            <a href="legal\cookie_policy.html" class="policyLinks">Cookie Policy</a>
+            <span class="policyLinksDot">&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+            <a href="legal\algemene_voorwaarden.html" class="policyLinks">Algemene Voorwaarden</a>
+            <span class="policyLinksDot">&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+            <span id="copyright" class="heart">
+                <a href="https://www.linkedin.com/in/tahak030/"
+                    style="color: rgb(236, 236, 236); text-decoration: none;">
+                    Gemaakt met ❤️ door Taha Karaman
+                </a>
+            </span>
+        </div>
+    </footer>
+    <button id="scrollToTopBtn" onclick="scrollToTop()">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+
+</html>
