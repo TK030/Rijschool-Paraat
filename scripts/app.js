@@ -129,7 +129,7 @@ if (selectedPakket) {
 document.getElementById('inschrijfformulier').addEventListener('submit', function (e) {
     e.preventDefault();
 
-    var naam = document.getElementById('naam').value;
+    var naam = document.getElementById('voornaam').value;
     var email = document.getElementById('email').value;
     var telefoon = document.getElementById('telefoon').value;
     var geboortedatum = document.getElementById('geboortedatum').value;

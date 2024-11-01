@@ -16,7 +16,7 @@ if (empty($responseKey)) {
 $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey&remoteip=$userIP";
 $response = file_get_contents($url);
 $responseKeys = json_decode($response, true);
-
+print_r($response);
 if (intval($responseKeys["success"]) !== 1) {
     die("reCAPTCHA verificatie mislukt. Probeer het opnieuw.");
 }
