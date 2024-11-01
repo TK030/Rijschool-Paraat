@@ -192,7 +192,7 @@
                     </select>
                     <div class="error" id="error-pakket"></div>
                 </div>
-                <div class="g-recaptcha" data-sitekey="#"></div>
+                <!-- <div class="g-recaptcha" data-sitekey="#"></div> -->
                 <button type="submit">Verstuur</button>
             </form>
             <br>
@@ -392,9 +392,9 @@
                 errors = true;
             }
 
-            // if (errors) {
-            //     event.preventDefault();
-            // }
+            if (errors) {
+                event.preventDefault();
+            }
         };
     </script>
 </body>

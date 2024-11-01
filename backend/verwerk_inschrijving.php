@@ -5,21 +5,21 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
 }
 
 // reCAPTCHA validatie
-$secretKey = '#';
-$responseKey = $_POST['g-recaptcha-response'] ?? '';
-$userIP = $_SERVER['REMOTE_ADDR'];
+// $secretKey = '#';
+// $responseKey = $_POST['g-recaptcha-response'] ?? '';
+// $userIP = $_SERVER['REMOTE_ADDR'];
 
-if (empty($responseKey)) {
-    die("reCAPTCHA verificatie mislukt. Probeer het opnieuw.");
-}
+// if (empty($responseKey)) {
+//     die("reCAPTCHA verificatie mislukt. Probeer het opnieuw.");
+// }
 
-$url = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey&remoteip=$userIP";
-$response = file_get_contents($url);
-$responseKeys = json_decode($response, true);
+// $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey&remoteip=$userIP";
+// $response = file_get_contents($url);
+// $responseKeys = json_decode($response, true);
 
-if (intval($responseKeys["success"]) !== 1) {
-    die("reCAPTCHA verificatie mislukt. Probeer het opnieuw.");
-}
+// if (intval($responseKeys["success"]) !== 1) {
+//     die("reCAPTCHA verificatie mislukt. Probeer het opnieuw.");
+// }
 
 // Formuliergegevens ophalen en schoonmaken
 $form_type = $_POST['form_type'] ?? '';
@@ -36,7 +36,7 @@ $ervaring = htmlspecialchars(trim($_POST['ervaring'] ?? ''));
 $tijden = htmlspecialchars(trim($_POST['tijden'] ?? ''));
 $pakket = htmlspecialchars(trim($_POST['pakket'] ?? ''));
 
-$to = "info@rijschoolparaat.nl";
+$to = "#";
 $subject = "Nieuwe inschrijving";
 $message = "Er is een nieuwe inschrijving ontvangen.<br><br>";
 $message .= "Naam: $voornaam $achternaam<br>";
@@ -62,15 +62,15 @@ $mail = new PHPMailer(true);
 
 try {
     $mail->isSMTP();
-    $mail->Host       = 'smtp.transip.email';
-    $mail->SMTPAuth   = true;
-    $mail->Username   = 'info@rijschoolparaat.nl';
-    $mail->Password   = 'Nkaraman2002';
-    $mail->SMTPSecure = 'ssl';
-    $mail->Port       = 465;
+    $mail->Host       = '#';
+    $mail->SMTPAuth   = #;
+    $mail->Username   = '#';
+    $mail->Password   = '#';
+    $mail->SMTPSecure = '#';
+    $mail->Port       = #;
 
-    $mail->setFrom($to, "Rijschool Paraat");
-    $mail->addBCC('info@rijschoolparaat.nl');
+        $mail->setFrom($to, "#");
+    $mail->addBCC('#');
     $mail->addReplyTo($email, "$voornaam $achternaam");
 
     $mail->isHTML(true);
